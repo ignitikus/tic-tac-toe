@@ -1,0 +1,57 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  font-family: "Press Start 2P", cursive;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.game-cell {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  font-weight: 900;
+}
+
+.game-cell:hover {
+  cursor: pointer;
+}
+
+#game-box-2,
+#game-box-8 {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+#game-box-4,
+#game-box-6 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#game-box-5 {
+  border: 1px solid black;
+}
