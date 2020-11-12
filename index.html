@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-   <title>Tic-Tac-Toe</title>
-</head>
-<body>
-   <div id='root'>
-      <div id='container'>
-         <h1>TIC-TAC-TOE</h1>
-         <div>Player:<select id="player-option-figure">
-               <option value="Cross">Cross</option>
-               <option value="Circle">Circle</option>
-            </select><select id="player-option-start">
-               <option value="player">First</option>
-               <option value="computer">Second</option>
-            </select>
-            <button id='reset-button'>Reset</button>
-         </div>
-         <div id='game-container'>
-            <div class="game-cell" id="game-box-1"></div>
-            <div class="game-cell" id="game-box-2"></div>
-            <div class="game-cell" id="game-box-3"></div>
-            <div class="game-cell" id="game-box-4"></div>
-            <div class="game-cell" id="game-box-5"></div>
-            <div class="game-cell" id="game-box-6"></div>
-            <div class="game-cell" id="game-box-7"></div>
-            <div class="game-cell" id="game-box-8"></div>
-            <div class="game-cell" id="game-box-9"></div>
-         </div>
-         <div id='footer'>Nikolay Kim © <span id='footer-year'>2020</span></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="container">
+        <h1>TIC-TAC-TOE</h1>
+        <div>
+          Player:<select id="player-option-figure">
+            <option value="Cross">Cross</option>
+            <option value="Circle">Circle</option></select
+          ><select id="player-option-start">
+            <option value="player">First</option>
+            <option value="computer">Second</option>
+          </select>
+          <button id="reset-button">Reset</button>
+        </div>
+        <div id="game-container">
+          <div class="game-cell" id="game-box-1"></div>
+          <div class="game-cell" id="game-box-2"></div>
+          <div class="game-cell" id="game-box-3"></div>
+          <div class="game-cell" id="game-box-4"></div>
+          <div class="game-cell" id="game-box-5"></div>
+          <div class="game-cell" id="game-box-6"></div>
+          <div class="game-cell" id="game-box-7"></div>
+          <div class="game-cell" id="game-box-8"></div>
+          <div class="game-cell" id="game-box-9"></div>
+        </div>
+        <div id="modal-result">
+          <div id="modal-close-button">x</div>
+          <p id="message">Message</p>
+          <button id="again-button">Again?</button>
+        </div>
+        <div id="footer">Nikolay Kim © <span id="footer-year">2020</span></div>
       </div>
-   </div>
-   <script src='script.js'></script>
-</body>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -24,6 +24,33 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
+  margin-top: 40px;
+  background-color: white;
+}
+
+#modal-result {
+  position: absolute;
+  background-color: white;
+  font-size: 2em;
+  width: 40vw;
+  height: 30vw;
+  padding: 10px;
+  border: 1px dotted black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+#modal-close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline;
+}
+#modal-close-button:hover {
+  cursor: pointer;
 }
 
 .game-cell {
@@ -35,6 +62,7 @@ body {
   align-items: center;
   font-size: 5em;
   font-weight: 900;
+  transition: all 0.5s ease;
 }
 
 .game-cell:hover {
@@ -43,15 +71,34 @@ body {
 
 #game-box-2,
 #game-box-8 {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
 }
 #game-box-4,
 #game-box-6 {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
 }
 
 #game-box-5 {
-  border: 1px solid black;
+  border: 1px dotted black;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.player {
+  color: rgb(0, 0, 175);
+  animation: pop 1s both;
+}
+
+.computer {
+  color: rgb(175, 0, 0);
+  animation: pop 1s both;
 }
