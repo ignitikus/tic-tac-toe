@@ -100,7 +100,7 @@ const smartMove = (arr) => {
     [4, 5, 6],
     [7, 8, 9],
     [1, 4, 7],
-    [2, 6, 8],
+    [2, 5, 8],
     [3, 6, 9],
   ];
 
@@ -112,6 +112,7 @@ const smartMove = (arr) => {
     });
 
     if (Math.abs(count) == 2) {
+      console.log(count, combo);
       const cellPosition = combo.filter(
         (num) => Math.abs(positions[`cell_${num}`]) != 1
       );
