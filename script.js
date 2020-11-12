@@ -61,7 +61,7 @@ const checkIfWon = (arr) => {
     Math.abs(positions.cell_3 + positions.cell_5 + positions.cell_7) === 3
   ) {
     displayModal(positions.cell_3 === 1 ? "You won!" : "Computer Won!");
-  } else {
+  } else if (arr.length === 9) {
     displayModal("Draw");
   }
 };
