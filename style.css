@@ -32,6 +32,8 @@ body {
   position: absolute;
   background-color: white;
   font-size: 2em;
+  min-width: 300px;
+  min-height: 300px;
   width: 40vw;
   height: 30vw;
   padding: 10px;
@@ -54,8 +56,12 @@ body {
 }
 
 .game-cell {
-  width: 200px;
-  height: 200px;
+  min-width: 50px;
+  min-height: 50px;
+  width: 30vw;
+  height: 30vw;
+  max-width: 250px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
