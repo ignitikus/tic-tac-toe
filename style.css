@@ -6,6 +6,11 @@ body {
 * {
   font-family: "Press Start 2P", cursive;
 }
+
+select,
+button {
+  height: 30px;
+}
 #container {
   display: flex;
   flex-direction: column;
@@ -115,7 +120,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  select {
+  select,
+  button {
     height: 45px;
   }
   button {
