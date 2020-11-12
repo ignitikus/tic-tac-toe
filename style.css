@@ -13,11 +13,16 @@ body {
   align-items: center;
 }
 
+#options {
+  text-align: center;
+}
+
 #footer {
   position: absolute;
   bottom: 0;
   padding: 10px;
   font-size: 1.3em;
+  text-align: center;
 }
 
 #game-container {
@@ -107,4 +112,13 @@ body {
 .computer {
   color: rgb(175, 0, 0);
   animation: pop 1s both;
+}
+
+@media (max-width: 600px) {
+  select {
+    height: 45px;
+  }
+  button {
+    margin-top: 20px;
+  }
 }
