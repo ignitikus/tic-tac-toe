@@ -4,7 +4,9 @@
 
 A simple Tic-Tac-Toe game written in pure HTML, CSS, and JS.
 
-Unfortunately, computer is not smart. It just selects random available cell.
+<s>Unfortunately, computer is not smart. It just selects random available cell.</s>
+
+Computer tries to win now. 
 
 To run it on your machine:
 
